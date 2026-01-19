@@ -138,7 +138,7 @@ impl AudioFormat {
     pub fn mime(self) -> &'static str {
         match self {
             Self::Mp3 => "audio/mpeg",
-            Self::Opus => "audio/ogg",
+            Self::Opus => "audio/opus",
         }
     }
 

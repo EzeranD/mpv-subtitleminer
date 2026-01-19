@@ -419,7 +419,7 @@
   }
   const audioMimeMap: Record<AudioFormat, string> = {
     mp3: 'audio/mpeg',
-    opus: 'audio/ogg',
+    opus: 'audio/opus',
   }
 
   const getMessageMediaInfo = (
@@ -1205,14 +1205,14 @@
                   </select>
                 </label>
                 <label class="form-group">
-                  <span>Image quality (WebP)</span>
+                  <span>Image quality</span>
                   <input
                     v-model.number="localMediaSettings.image.quality"
                     type="number"
                     min="0"
                     max="100"
                   />
-                  <small class="field-hint">0-100, used for WebP encoding</small>
+                  <small class="field-hint">0-100, applied when using WebP output.</small>
                 </label>
                 <label class="form-group">
                   <span>Audio format</span>

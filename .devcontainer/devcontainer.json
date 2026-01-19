@@ -1,0 +1,40 @@
+{
+	"name": "Mining Tool Dev Container",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {
+			"version": "22"
+		}
+	},
+	"forwardPorts": [
+		61777,
+		5173
+	],
+	"mounts": [
+		{
+			"source": "/tmp",
+			"target": "/tmp",
+			"type": "bind"
+		},
+		{
+			"source": "devcontainer-cargo-cache-${devcontainerId}",
+			"target": "/usr/local/cargo",
+			"type": "volume"
+		}
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"GitHub.copilot",
+				"Vue.volar",
+				"openai.chatgpt",
+				"sumneko.lua",
+				"dbaeumer.vscode-eslint",
+				"esbenp.prettier-vscode",
+				"GitHub.vscode-github-actions"
+			]
+		}
+	}
+}

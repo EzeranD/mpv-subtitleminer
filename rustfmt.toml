@@ -1,0 +1,7 @@
+edition = "2024"
+max_width = 100
+chain_width = 60
+comment_width = 80
+wrap_comments = true
+normalize_comments = true
+format_strings = true

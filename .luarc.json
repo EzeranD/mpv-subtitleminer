@@ -1,0 +1,10 @@
+{
+    // Put stubs for Lua libraries here for IDE support
+    "workspace.library": [
+        "${workspaceFolder}/stubs"
+    ],
+    "workspace.useGitIgnore": false,
+    "diagnostics.globals": [
+        "mp"
+    ]
+}

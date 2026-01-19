@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=mpv-subtitleminer",
+                    "--package=mpv-subtitleminer"
+                ],
+                "filter": {
+                    "name": "mpv-subtitleminer",
+                    "kind": "bin"
+                }
+            },
+            "args": [
+                "/tmp/mpv-socket"
+            ],
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "RUST_LOG": "mpv-subtitleminer=debug"
+            }
+        }
+    ]
+}

@@ -1,5 +1,6 @@
 .files
 /target
+/result
 
 # Lua type stubs (for IDE support only)
 stubs
